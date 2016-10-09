@@ -17,7 +17,7 @@ app.get('/article-two', function (req, res) {
    res.send("Hi, article two is served") 
 });
 
-app.get('/article-two', function (req, res) {
+app.get('/article-three', function (req, res) {
    res.send("Hi, article three is served") 
 });
 
