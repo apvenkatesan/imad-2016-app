@@ -5,29 +5,51 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne={
-    title:"Article One - Venktesan",
-    heading:"Article One",
-    date:"Sep 5, 2016",
-    content:`
-        <p>
-           This is the code for my Article One.
-           This is the code for my Article One.
-           This is the code for my Article One.
-           This is the code for my Article One.
-        </p>
-        <p>
-           This is the code for my Article One.
-           This is the code for my Article One.
-           This is the code for my Article One.
-           This is the code for my Article One.
-        </p>
-        <p>
-           This is the code for my Article One.
-           This is the code for my Article One.
-           This is the code for my Article One.
-           This is the code for my Article One.
-        </p>`
+var articles = {
+    articleOne:{
+        title:"Article One - Venktesan",
+        heading:"Article One",
+        date:"Sep 5, 2016",
+        content:`
+            <p>
+               This is the code for my Article One.
+               This is the code for my Article One.
+               This is the code for my Article One.
+               This is the code for my Article One.
+            </p>
+            <p>
+               This is the code for my Article One.
+               This is the code for my Article One.
+               This is the code for my Article One.
+               This is the code for my Article One.
+            </p>
+            <p>
+               This is the code for my Article One.
+               This is the code for my Article One.
+               This is the code for my Article One.
+               This is the code for my Article One.
+            </p>`
+    },
+    articleTwo:{
+        title:"Article Two - Venktesan",
+        heading:"Article Two",
+        date:"Sep 10, 2016",
+        content:`
+            <p>
+               This is the code for my Article Two.
+               This is the code for my Article Two.
+               This is the code for my Article Two.
+               This is the code for my Article Two.
+            </p>
+    },
+    articleThree:{
+        title:"Article Three - Venktesan",
+        heading:"Article Three",
+        date:"Sep 15, 2016",
+        content:`
+               This is the code for my Article Three.
+               `
+    }
 };
 
 var createTemplate = function (data) {
