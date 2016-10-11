@@ -41,6 +41,7 @@ var articles = {
                This is the code for my Article Two.
                This is the code for my Article Two.
             </p>
+            `
     },
     articleThree:{
         title:"Article Three - Venktesan",
@@ -49,7 +50,7 @@ var articles = {
         content:`
                This is the code for my Article Three.
                `
-    };
+    }
 };
 
 var createTemplate = function (data) {
