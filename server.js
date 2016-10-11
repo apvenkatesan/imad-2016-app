@@ -49,7 +49,7 @@ var articles = {
         content:`
                This is the code for my Article Three.
                `
-    }
+    };
 };
 
 var createTemplate = function (data) {
